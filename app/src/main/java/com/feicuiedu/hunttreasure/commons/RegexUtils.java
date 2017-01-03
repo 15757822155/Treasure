@@ -1,4 +1,4 @@
-package com.zhuoxin.hunttreasure.commons;
+package com.feicuiedu.hunttreasure.commons;
 
 import android.support.annotation.NonNull;
 

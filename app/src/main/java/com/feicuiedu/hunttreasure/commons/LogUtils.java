@@ -1,4 +1,4 @@
-package com.zhuoxin.hunttreasure.commons;
+package com.feicuiedu.hunttreasure.commons;
 
 /**
  * 日志打印的工具类,对日志的输出做统一管理

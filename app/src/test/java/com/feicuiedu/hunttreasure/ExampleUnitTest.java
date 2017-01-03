@@ -1,4 +1,4 @@
-package com.zhuoxin.hunttreasure;
+package com.feicuiedu.hunttreasure;
 
 import org.junit.Test;
 

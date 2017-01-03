@@ -1,15 +1,15 @@
-package com.zhuoxin.hunttreasure;
+package com.feicuiedu.hunttreasure.treasure;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.feicuiedu.hunttreasure.R;
+
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        
+        setContentView(R.layout.content_home);
     }
 }

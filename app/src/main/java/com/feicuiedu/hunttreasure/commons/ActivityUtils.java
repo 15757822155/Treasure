@@ -1,4 +1,4 @@
-package com.zhuoxin.hunttreasure.commons;
+package com.feicuiedu.hunttreasure.commons;
 
 
 import android.app.Activity;
@@ -28,24 +28,26 @@ public class ActivityUtils {
         activityWeakReference = new WeakReference<>(activity);
     }
 
-    public ActivityUtils(Fragment fragment){
+    public ActivityUtils(Fragment fragment) {
         fragmentWeakReference = new WeakReference<>(fragment);
     }
 
-    private @Nullable
+    private
+    @Nullable
     Activity getActivity() {
 
         if (activityWeakReference != null) return activityWeakReference.get();
         if (fragmentWeakReference != null) {
             Fragment fragment = fragmentWeakReference.get();
-            return fragment == null? null : fragment.getActivity();
+            return fragment == null ? null : fragment.getActivity();
         }
         return null;
     }
 
-    public void showToast(CharSequence msg){
+    // 封装的弹吐司的方法
+    public void showToast(CharSequence msg) {
         Activity activity = getActivity();
-        if (activity != null){
+        if (activity != null) {
             if (toast == null) toast = Toast.makeText(activity, msg, Toast.LENGTH_SHORT);
             toast.setText(msg);
             toast.show();
@@ -53,7 +55,7 @@ public class ActivityUtils {
     }
 
     @SuppressWarnings("SameParameterValue")
-    public void showToast(int resId){
+    public void showToast(int resId) {
         Activity activity = getActivity();
         if (activity != null) {
             String msg = activity.getString(resId);
@@ -61,7 +63,8 @@ public class ActivityUtils {
         }
     }
 
-    public void startActivity(Class<? extends Activity> clazz){
+    // 跳转页面
+    public void startActivity(Class<? extends Activity> clazz) {
         Activity activity = getActivity();
         if (activity == null) return;
         Intent intent = new Intent(activity, clazz);
@@ -106,13 +109,13 @@ public class ActivityUtils {
         return metrics.heightPixels;
     }
 
-    public void hideSoftKeyboard(){
+    public void hideSoftKeyboard() {
         Activity activity = getActivity();
         if (activity == null) return;
 
         View view = activity.getCurrentFocus();
         if (view != null) {
-            InputMethodManager imm = (InputMethodManager)activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+            InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
