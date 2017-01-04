@@ -1,4 +1,4 @@
-package com.feicuiedu.hunttreasure.custom;
+package com.zhuoxin.hunttreasure.custom;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -7,7 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 
-import com.feicuiedu.hunttreasure.R;
+import com.zhuoxin.hunttreasure.R;
 
 
 /**

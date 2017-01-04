@@ -1,4 +1,4 @@
-package com.feicuiedu.hunttreasure;
+package com.zhuoxin.hunttreasure.treasure;
 
 import android.content.res.AssetFileDescriptor;
 import android.graphics.SurfaceTexture;
@@ -12,7 +12,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.feicuiedu.hunttreasure.commons.ActivityUtils;
+import com.zhuoxin.hunttreasure.commons.ActivityUtils;
 
 import java.io.FileDescriptor;
 import java.io.IOException;

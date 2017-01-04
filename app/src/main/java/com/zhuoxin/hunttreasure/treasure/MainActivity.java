@@ -1,4 +1,4 @@
-package com.feicuiedu.hunttreasure;
+package com.zhuoxin.hunttreasure.treasure;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -9,9 +9,10 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.feicuiedu.hunttreasure.commons.ActivityUtils;
-import com.feicuiedu.hunttreasure.user.login.LoginActivity;
-import com.feicuiedu.hunttreasure.user.register.RegisterActivity;
+import com.zhuoxin.hunttreasure.R;
+import com.zhuoxin.hunttreasure.commons.ActivityUtils;
+import com.zhuoxin.hunttreasure.user.login.LoginActivity;
+import com.zhuoxin.hunttreasure.user.register.RegisterActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

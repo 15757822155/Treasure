@@ -1,4 +1,4 @@
-package com.feicuiedu.hunttreasure.user.register;
+package com.zhuoxin.hunttreasure.user.register;
 
 
 import android.app.ProgressDialog;
@@ -14,12 +14,12 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.feicuiedu.hunttreasure.MainActivity;
-import com.feicuiedu.hunttreasure.R;
-import com.feicuiedu.hunttreasure.commons.ActivityUtils;
-import com.feicuiedu.hunttreasure.commons.RegexUtils;
-import com.feicuiedu.hunttreasure.custom.AlertDialogFragment;
-import com.feicuiedu.hunttreasure.treasure.HomeActivity;
+import com.zhuoxin.hunttreasure.treasure.MainActivity;
+import com.zhuoxin.hunttreasure.R;
+import com.zhuoxin.hunttreasure.commons.ActivityUtils;
+import com.zhuoxin.hunttreasure.commons.RegexUtils;
+import com.zhuoxin.hunttreasure.custom.AlertDialogFragment;
+import com.zhuoxin.hunttreasure.treasure.HomeActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -170,7 +170,7 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView 
     @Override
     public void showProgress() {
         //带进度条的dialog
-        mDialog = ProgressDialog.show(this, "注册", "正在注册中,请稍后~");
+        mDialog = ProgressDialog.show(this, "注册", "亲,正在注册中,请稍后~");
     }
 
 }

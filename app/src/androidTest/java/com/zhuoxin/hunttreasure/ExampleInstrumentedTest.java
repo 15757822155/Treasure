@@ -1,4 +1,4 @@
-package com.feicuiedu.hunttreasure;
+package com.zhuoxin.hunttreasure;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

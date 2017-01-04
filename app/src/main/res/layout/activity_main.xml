@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/mainMp4Fragment"
-        android:name="com.feicuiedu.hunttreasure.MainMp4Fragment"
+        android:name="com.zhuoxin.hunttreasure.treasure.MainMp4Fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

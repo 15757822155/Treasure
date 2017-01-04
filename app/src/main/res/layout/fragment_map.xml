@@ -130,7 +130,7 @@
             android:layout_height="@dimen/dp_100"
             android:visibility="gone">
             <!--用来显示宝藏信息的卡片(选中藏宝时)-->
-            <com.feicuiedu.treasure.components.TreasureView
+            <com.zhuoxin.treasure.components.TreasureView
                 android:id="@+id/treasureView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -1,4 +1,4 @@
-package com.feicuiedu.hunttreasure.user.register;
+package com.zhuoxin.hunttreasure.user.register;
 
 import android.os.AsyncTask;
 
@@ -46,7 +46,4 @@ public class RegisterPresenter {
             }
         }.execute();
     }
-
-
-    ;
 }

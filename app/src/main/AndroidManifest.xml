@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.feicuiedu.hunttreasure">
+          package="com.zhuoxin.hunttreasure">
 
     <application
         android:allowBackup="true"
@@ -10,18 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name="com.feicuiedu.hunttreasure.MainActivity">
+        <activity android:name="com.zhuoxin.hunttreasure.treasure.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.feicuiedu.hunttreasure.user.login.LoginActivity">
+        <activity android:name="com.zhuoxin.hunttreasure.user.login.LoginActivity">
         </activity>
-        <activity android:name="com.feicuiedu.hunttreasure.user.register.RegisterActivity">
+        <activity android:name="com.zhuoxin.hunttreasure.user.register.RegisterActivity">
         </activity>
-        <activity android:name="com.feicuiedu.hunttreasure.treasure.HomeActivity">
+        <activity android:name="com.zhuoxin.hunttreasure.treasure.HomeActivity">
         </activity>
     </application>
 

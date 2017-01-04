@@ -1,10 +1,10 @@
-package com.feicuiedu.hunttreasure.user.register;
+package com.zhuoxin.hunttreasure.user.login;
 
 /**
  * Created by Administrator on 2017/1/3.
  */
 
-public interface RegisterView {
+public interface LoginView {
     void showProgress();
 
     void hideProgress();

@@ -1,9 +1,9 @@
-package com.feicuiedu.hunttreasure.treasure;
+package com.zhuoxin.hunttreasure.treasure;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.feicuiedu.hunttreasure.R;
+import com.zhuoxin.hunttreasure.R;
 
 public class HomeActivity extends AppCompatActivity {
 
