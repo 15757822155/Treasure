@@ -62,16 +62,19 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     //文本改变的监听
     private TextWatcher textWatcher = new TextWatcher() {
         @Override
+        //文本变化前
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
         }
 
         @Override
+        //文本输入变化
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
         }
 
         @Override
+        //文本输入后,在这里处理登录按钮是否可点击
         public void afterTextChanged(Editable s) {
             mUsername = mEtUsername.getText().toString();
             mPassword = mEtPassword.getText().toString();

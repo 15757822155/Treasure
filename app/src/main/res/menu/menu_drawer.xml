@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/menu_hide"
+            android:icon="@drawable/ic_hide"
+            android:title="@string/hide_treasure"
+            />
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/menu_my_list"
+            android:icon="@drawable/ic_my_list"
+            android:title="@string/my_list"
+            />
+    </group>
+
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/menu_help"
+            android:icon="@drawable/ic_live_help"
+            android:title="@string/about_help"
+            />
+    </group>
+
+    <group android:id="@+id/group4">
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/log_out"
+            />
+    </group>
+
+</menu>

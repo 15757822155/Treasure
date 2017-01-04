@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 
 /**
  * Created by Administrator on 2017/1/3.
+ * 用于处理注册的相关业务
  */
 
 public class RegisterPresenter {
@@ -14,6 +15,13 @@ public class RegisterPresenter {
     }
 
     public void register() {
+        /**
+         * 3个泛型：
+         * 3. 1. 启动任务输入的参数类型：请求的地址、上传的数据等类型
+         * 3. 2. 后台任务执行的进度：一般是Integer类型(int的包装类)
+         * 3. 3. 后台返回的结果类型：比如String类型、Void等
+         * 模拟注册，三个泛型都不需要的时候都可以设置成Void
+         */
         new AsyncTask<Void, Integer, Void>() {
             // 可以使用进度条增加用户体验度。 此方法在主线程执行，用于显示任务执行的进度。
             @Override

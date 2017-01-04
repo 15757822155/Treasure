@@ -2,6 +2,7 @@ package com.zhuoxin.hunttreasure.user.register;
 
 /**
  * Created by Administrator on 2017/1/3.
+ *
  */
 
 public interface RegisterView {
