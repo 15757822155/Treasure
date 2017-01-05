@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.zhuoxin.hunttreasure.R;
 import com.zhuoxin.hunttreasure.commons.ActivityUtils;
 
@@ -30,6 +31,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.activity_home);
         ButterKnife.bind(this);
         mActivityUtils = new ActivityUtils(this);
@@ -38,6 +40,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(mToolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+            getSupportActionBar().setTitle("");
         }
 
         //drawerLayout设置监听
@@ -79,6 +82,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 mActivityUtils.showToast("哈撒开");
                 break;
         }
+        mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 
