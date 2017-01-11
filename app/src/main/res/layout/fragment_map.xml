@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-    android:id="@+id/map_frame"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!--<com.baidu.mapapi.map.MapView-->
-        <!--android:id="@+id/bmapView"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:clickable="true" />-->
+    <!--android:id="@+id/bmapView"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:clickable="true" />-->
     <!--地图上的藏宝操作按钮,默认应该是gone的-->
     <!--android:visibility="gone"-->
     <RelativeLayout
@@ -67,8 +67,8 @@
                     android:id="@+id/iv_scaleUp"
                     android:layout_width="match_parent"
                     android:layout_height="0px"
-                    android:layout_weight="1"
                     android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:scaleType="centerInside"
                     android:src="@mipmap/scale_up"/>
 
@@ -135,12 +135,11 @@
             android:layout_height="@dimen/dp_100"
             android:visibility="gone">
             <!--用来显示宝藏信息的卡片(选中藏宝时)-->
-            <!--<com.zhuoxin.treasure.components.TreasureView-->
-                <!--android:id="@+id/treasureView"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:layout_gravity="center"/>-->
-
+            <com.zhuoxin.hunttreasure.custom.TreasureView
+                android:id="@+id/treasureView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"></com.zhuoxin.hunttreasure.custom.TreasureView>
             <!--用来录入宝藏信息的卡片(藏宝时)-->
             <include
                 android:id="@+id/hide_treasure"
@@ -148,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
         </FrameLayout>
 
     </LinearLayout>

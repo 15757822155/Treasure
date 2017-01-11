@@ -20,6 +20,7 @@ import com.zhuoxin.hunttreasure.commons.ActivityUtils;
 import com.zhuoxin.hunttreasure.commons.RegexUtils;
 import com.zhuoxin.hunttreasure.custom.AlertDialogFragment;
 import com.zhuoxin.hunttreasure.treasure.HomeActivity;
+import com.zhuoxin.hunttreasure.user.User;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -132,7 +133,7 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView 
         }
         // 进行注册的功能：模拟场景进行注册
 
-        new RegisterPresenter(this).register();
+        new RegisterPresenter(this).register(new User(mUsername,mPassword));
     }
 
     //页面跳转

@@ -19,6 +19,7 @@ import com.zhuoxin.hunttreasure.commons.RegexUtils;
 import com.zhuoxin.hunttreasure.custom.AlertDialogFragment;
 import com.zhuoxin.hunttreasure.treasure.HomeActivity;
 import com.zhuoxin.hunttreasure.treasure.MainActivity;
+import com.zhuoxin.hunttreasure.user.User;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -112,7 +113,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
             return;
         }
 
-        new LoginPresenter(this).login();
+        new LoginPresenter(this).login(new User(mUsername,mPassword));
     }
 
     @Override

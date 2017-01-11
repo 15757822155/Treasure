@@ -48,18 +48,18 @@
             android:value="ufO083AE1U8ZkxAX8UmxG5VHaPSGScYK"/>
 
         <activity android:name="com.zhuoxin.hunttreasure.treasure.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity android:name="com.zhuoxin.hunttreasure.user.login.LoginActivity">
         </activity>
         <activity android:name="com.zhuoxin.hunttreasure.user.register.RegisterActivity">
         </activity>
         <activity android:name="com.zhuoxin.hunttreasure.treasure.HomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
     </application>
 
